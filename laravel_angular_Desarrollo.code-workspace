@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "frontend"
+		},
+		{
+			"path": "/opt/lampp/htdocs/backend"
+		}
+	],
+	"settings": {}
+}
