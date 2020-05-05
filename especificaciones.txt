@@ -1,0 +1,2 @@
+la carpeta backend, se encuentra el proyecto de la logica de laravel 7 con las migraciones de la bases de datos con la dependencia JWT
+la carpeta front end, se encuentra la parte visual del proyecto con la dependeica NotifyToasater para notificcaciones
