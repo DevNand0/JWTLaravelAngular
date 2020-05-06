@@ -1,0 +1,48 @@
+
+<div class="mt-4 col-8 offset-2">
+    <div class="card">
+        <div class="card-header">
+            Sign Up
+        </div>
+        <div class="card-body">
+            <form #signupForm=ngForm (ngSubmit)="onSubmit()">
+              
+                <div class="form-group">
+                    <label for="exampleInputEmail1">User Full Name</label>
+                    <input type="text" class="form-control" 
+                        name="name" placeholder="Enter your Full Name" 
+                        id="exampleInputName" aria-describedby="emailHelp"
+                        [(ngModel)]="form.name" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" 
+                         name="email" placeholder="Enter your Email" 
+                         id="exampleInputEmail1" aria-describedby="emailHelp"
+                         [(ngModel)]="form.email" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" name="password" 
+                         placeholder="Enter your Password" class="form-control" 
+                         id="exampleInputPassword1" [(ngModel)]="form.password" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPasswordConfirm">Confirm your Password</label>
+                    <input type="password" name="password_confirmation" 
+                           placeholder="Confirm your Password" class="form-control" 
+                           id="exampleInputPasswordConfirm" [(ngModel)]="form.password_confirmation" required>
+                          
+                  </div>
+                <div class="form-group">
+                  <div class="col-sm-10 offset-1">
+                    <button type="submit" class="btn btn-primary" [disabled]='!signupForm.valid'>Create Account</button>
+                    
+                    <a routerLink="sigin" class="btn btn-info float-right" >Sign In</a>
+                  </div>
+                </div>
+                
+              </form>
+        </div>
+    </div>
+</div>

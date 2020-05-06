@@ -1,0 +1,3 @@
+[submodule "JWTLaravelAngular"]
+	path = JWTLaravelAngular
+	url = https://github.com/DevNand0/JWTLaravelAngular/
